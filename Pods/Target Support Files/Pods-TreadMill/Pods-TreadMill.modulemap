@@ -1,0 +1,6 @@
+framework module Pods_TreadMill {
+  umbrella header "Pods-TreadMill-umbrella.h"
+
+  export *
+  module * { export * }
+}
