@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CurrentRunVC: UIViewController {
+class CurrentRunVC: LocationVC  {
     
     @IBOutlet weak var swipeBGImageView: UIImageView!
     @IBOutlet weak var sliderImageView: UIImageView!

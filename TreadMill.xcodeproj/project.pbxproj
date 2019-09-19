@@ -18,6 +18,7 @@
 		4E92BFBC23339CA50011B226 /* CurrentRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92BFBB23339CA50011B226 /* CurrentRunVC.swift */; };
 		4E92BFBE23339D0C0011B226 /* RunLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92BFBD23339D0C0011B226 /* RunLogCell.swift */; };
 		4E92BFC123339D410011B226 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92BFC023339D410011B226 /* Constants.swift */; };
+		4E92BFC32333A01E0011B226 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92BFC22333A01E0011B226 /* LocationVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		4E92BFBB23339CA50011B226 /* CurrentRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRunVC.swift; sourceTree = "<group>"; };
 		4E92BFBD23339D0C0011B226 /* RunLogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLogCell.swift; sourceTree = "<group>"; };
 		4E92BFC023339D410011B226 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4E92BFC22333A01E0011B226 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		525BA2E3777EC1B4C700F00F /* Pods-TreadMill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreadMill.debug.xcconfig"; path = "Target Support Files/Pods-TreadMill/Pods-TreadMill.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +137,7 @@
 				4E92BFB723339C0B0011B226 /* BeginRunVC.swift */,
 				4E92BFB923339C7C0011B226 /* RunLogVC.swift */,
 				4E92BFBB23339CA50011B226 /* CurrentRunVC.swift */,
+				4E92BFC22333A01E0011B226 /* LocationVC.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				4E92BF91233394830011B226 /* ViewController.swift in Sources */,
 				4E92BFBA23339C7C0011B226 /* RunLogVC.swift in Sources */,
 				4E92BFC123339D410011B226 /* Constants.swift in Sources */,
+				4E92BFC32333A01E0011B226 /* LocationVC.swift in Sources */,
 				4E92BF8F233394830011B226 /* AppDelegate.swift in Sources */,
 				4E92BFB823339C0B0011B226 /* BeginRunVC.swift in Sources */,
 			);

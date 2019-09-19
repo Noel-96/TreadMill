@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 
 
-class BeginRunVC: UIViewController {
+class BeginRunVC: LocationVC  {
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var lastRunCloseBtn: UIButton!
@@ -23,9 +23,38 @@ class BeginRunVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+       checkLocationAuthStatus()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        manager?.delegate = self
+        mapView.delegate = self
+        manager?.startUpdatingLocation()
     }
  
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        manager?.stopUpdatingLocation()
+    }
 
+    
+
+}
+
+
+extension BeginRunVC: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
+            checkLocationAuthStatus()
+            mapView.showsUserLocation = true
+        }
+    }
+    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        let polyline = overlay as! MKPolyline
+        let renderer = MKPolylineRenderer(polyline: polyline)
+        renderer.strokeColor  = #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)
+        renderer.lineWidth = 4
+        return renderer
+    }
 }

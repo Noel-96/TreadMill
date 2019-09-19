@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RunLogVC: UIViewController {
+class RunLogVC:  UIViewController  {
     
      @IBOutlet weak var tableView: UITableView!
 
