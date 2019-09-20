@@ -20,8 +20,11 @@ class RunLogCell: UITableViewCell {
         super.awakeFromNib()
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    func configure(run: Run) {
+        runDurationLbl.text = run.duration.formatTimeDurationToString()
+        totalDistanceLbl.text = "\(run.distance.metersToMiles(places: 2)) mi"
+        averagePaceLbl.text = run.pace.formatTimeDurationToString()
+        dateLbl.text = run.date.getDateString()
     }
 
 }

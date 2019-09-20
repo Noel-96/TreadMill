@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		343B05FF99051B27ECEC14A0 /* Pods_TreadMill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E54C3C1F7939D808D36D680 /* Pods_TreadMill.framework */; };
+		4E8900C62334D82D00D63E6E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8900C52334D82D00D63E6E /* Location.swift */; };
 		4E92BF8F233394830011B226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92BF8E233394820011B226 /* AppDelegate.swift */; };
 		4E92BF91233394830011B226 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92BF90233394830011B226 /* ViewController.swift */; };
 		4E92BF94233394830011B226 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E92BF92233394830011B226 /* Main.storyboard */; };
@@ -21,11 +22,13 @@
 		4E92BFC32333A01E0011B226 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92BFC22333A01E0011B226 /* LocationVC.swift */; };
 		4E92BFC52333B0380011B226 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92BFC42333B0380011B226 /* Extensions.swift */; };
 		4E92BFC72333D6BD0011B226 /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92BFC62333D6BD0011B226 /* Run.swift */; };
+		4E92BFC92333E3680011B226 /* RealmConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92BFC82333E3680011B226 /* RealmConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E54C3C1F7939D808D36D680 /* Pods_TreadMill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreadMill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D95DB23F6C366150DE9AD65 /* Pods-TreadMill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreadMill.release.xcconfig"; path = "Target Support Files/Pods-TreadMill/Pods-TreadMill.release.xcconfig"; sourceTree = "<group>"; };
+		4E8900C52334D82D00D63E6E /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		4E92BF8B233394820011B226 /* TreadMill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreadMill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E92BF8E233394820011B226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E92BF90233394830011B226 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +62,7 @@
 		4E92BFC22333A01E0011B226 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		4E92BFC42333B0380011B226 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4E92BFC62333D6BD0011B226 /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
+		4E92BFC82333E3680011B226 /* RealmConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmConfig.swift; sourceTree = "<group>"; };
 		525BA2E3777EC1B4C700F00F /* Pods-TreadMill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreadMill.debug.xcconfig"; path = "Target Support Files/Pods-TreadMill/Pods-TreadMill.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +127,7 @@
 		4E92BFA023339B850011B226 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				4E8900C52334D82D00D63E6E /* Location.swift */,
 				4E92BFC62333D6BD0011B226 /* Run.swift */,
 			);
 			path = model;
@@ -184,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				4E92BFC023339D410011B226 /* Constants.swift */,
+				4E92BFC82333E3680011B226 /* RealmConfig.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -319,7 +325,9 @@
 				4E92BFBA23339C7C0011B226 /* RunLogVC.swift in Sources */,
 				4E92BFC123339D410011B226 /* Constants.swift in Sources */,
 				4E92BFC32333A01E0011B226 /* LocationVC.swift in Sources */,
+				4E92BFC92333E3680011B226 /* RealmConfig.swift in Sources */,
 				4E92BF8F233394830011B226 /* AppDelegate.swift in Sources */,
+				4E8900C62334D82D00D63E6E /* Location.swift in Sources */,
 				4E92BFB823339C0B0011B226 /* BeginRunVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,7 +22,7 @@ class CurrentRunVC: LocationVC  {
     fileprivate var startLocation: CLLocation!
     fileprivate var lastLocation: CLLocation!
     fileprivate var timer = Timer()
-  //  fileprivate var coordinateLocations = List<Location>()
+    fileprivate var coordinateLocations = List<Location>()
     fileprivate var runDistance = 0.0
     fileprivate var pace = 0
     fileprivate var counter = 0
@@ -62,7 +62,7 @@ class CurrentRunVC: LocationVC  {
     
     func endRun() {
         manager?.stopUpdatingLocation()
-       // Run.addRunToRealm(pace: pace, distance: runDistance, duration: counter, locations: coordinateLocations)
+       Run.addRunToRealm(pace: pace, distance: runDistance, duration: counter, locations: coordinateLocations)
     }
     
     
@@ -132,12 +132,12 @@ extension CurrentRunVC: CLLocationManagerDelegate {
             startLocation = locations.first
         } else if let location = locations.last {
             runDistance += lastLocation.distance(from: location)
-            //let newLocation = Location(latitude: Double(lastLocation.coordinate.latitude), longitude: Double(lastLocation.coordinate.longitude))
-          //  coordinateLocations.insert(newLocation, at: 0)
+            let newLocation = Location(latitude: Double(lastLocation.coordinate.latitude), longitude: Double(lastLocation.coordinate.longitude))
+            coordinateLocations.insert(newLocation, at: 0)
             distanceLbl.text = "\(runDistance.metersToMiles(places: 2))"
             if counter > 0 && runDistance > 0 {
                 paceLbl.text = calculatePace(time: counter, miles: runDistance.metersToMiles(places: 2))
-            }
+            }  
         }
         lastLocation = locations.last
     }
